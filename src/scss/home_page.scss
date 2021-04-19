@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+$red-color: #b00503;
+
+@import 'header';
+@import 'benefits';
+@import 'search';
+@import 'new_arrivals';
+@import 'footer';
