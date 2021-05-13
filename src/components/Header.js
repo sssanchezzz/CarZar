@@ -73,7 +73,11 @@ const Header = () => {
                     </button>
                     <ul>
                         <li>
+<<<<<<< HEAD
                             <Link to='/'> Register</Link>
+=======
+                            <a href='/register'> Register</a>
+>>>>>>> ad516040acbc5d9ffbf5e077fcc0b78e8cdb2060
                         </li>
                         <li>
                             <Link to='/'>Login</Link>
