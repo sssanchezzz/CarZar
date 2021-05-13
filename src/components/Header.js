@@ -20,16 +20,32 @@ const Header = () => {
                     <div className='icons-social'>
                         <div className='empty'></div>
                         <div className='icons'>
-                            <a href='#'>
+                            <a
+                                href='https://web.telegram.org/#/login'
+                                target='_blank'
+                                rel='noopener noreferrer'
+                            >
                                 <img src={telegram} alt='telegram link' />
                             </a>
-                            <a href='#'>
+                            <a
+                                href='https://www.google.com/intl/ru/gmail/about/'
+                                target='_blank'
+                                rel='noopener noreferrer'
+                            >
                                 <img src={google} alt='google link' />
                             </a>
-                            <a href='#'>
+                            <a
+                                href='https://www.instagram.com/?hl=ru'
+                                target='_blank'
+                                rel='noopener noreferrer'
+                            >
                                 <img src={insta} alt='instagram link' />
                             </a>
-                            <a href='#'>
+                            <a
+                                href='https://www.facebook.com/'
+                                target='_blank'
+                                rel='noopener noreferrer'
+                            >
                                 <img src={facebook} alt='facebook link' />
                             </a>
                         </div>
@@ -42,13 +58,13 @@ const Header = () => {
                         <Link to='/'>Home</Link>
                     </li>
                     <li>
-                        <a href='#'>New Cars</a>
+                        <Link to='/'>New Cars</Link>
                     </li>
                     <li>
-                        <a href='#'>Used Cars</a>
+                        <Link to='/'>Used Cars</Link>
                     </li>
                     <li>
-                        <a href='#'>Electro Cars</a>{' '}
+                        <Link to='/'>Electro Cars</Link>
                     </li>
                 </ul>
                 <div className='login'>
@@ -57,10 +73,10 @@ const Header = () => {
                     </button>
                     <ul>
                         <li>
-                            <a href='#'> Register</a>
+                            <Link to='/'> Register</Link>
                         </li>
                         <li>
-                            <a href='#'>Login</a>
+                            <Link to='/'>Login</Link>
                         </li>
                     </ul>
                 </div>

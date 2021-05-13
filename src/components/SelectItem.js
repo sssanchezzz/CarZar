@@ -1,16 +1,13 @@
 import React from 'react';
 
 const SelectItem = (props) => {
-    const { title } = props;
+    const { title, selectItems } = props;
     return (
         <div className='select-item'>
             <h4>{title}</h4>
-
             <select className='search-select'>
-                <option></option>
-                <option>1</option>
-
-                {/* {createSelectItems(arr)} */}
+                <option>Choose {title}</option>
+                {createSelectItems(selectItems)}
             </select>
         </div>
     );
@@ -24,8 +21,6 @@ const createSelectItems = (arr) => {
                 {arr[i]}
             </option>
         );
-        //here I will be creating my options dynamically based on
-        //what props are currently passed to the parent component
     }
     return items;
 };
