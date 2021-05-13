@@ -37,6 +37,7 @@ const NewArrivals = () => {
                 />
                 <AdMiniature name='Luigi' picture={yellow_car} price='100000' />
             </div>
+
             <button className='red-btn show-more-btn'>Show More</button>
         </div>
     );

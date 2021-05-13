@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import header_svg from '../img/header_black_svg.svg';
 import insta from '../img/insta.svg';
 import facebook from '../img/facebook.svg';
@@ -10,7 +12,7 @@ const Header = () => {
             <div className='links'>
                 <div className='logo'>
                     <h1>
-                        <a href='#'>CarZar</a>
+                        <Link to='/'>CarZar</Link>
                     </h1>
                 </div>
                 <div className='black-bg'>
@@ -37,7 +39,7 @@ const Header = () => {
             <div className='menu-items'>
                 <ul className='menu'>
                     <li className='active'>
-                        <a href='#'>Home</a>
+                        <Link to='/'>Home</Link>
                     </li>
                     <li>
                         <a href='#'>New Cars</a>
@@ -51,7 +53,7 @@ const Header = () => {
                 </ul>
                 <div className='login'>
                     <button className='sell-car-btn red-btn'>
-                        <a href='#'> Sell a car</a>
+                        <Link to='/new_ad'> Sell a car</Link>
                     </button>
                     <ul>
                         <li>
