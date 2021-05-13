@@ -11,7 +11,7 @@ const AdMiniature = (props) => {
   );
 };
 const Kus = () => {
-    return 'Kus';
+  return "Kus";
 };
 
 export default AdMiniature;
