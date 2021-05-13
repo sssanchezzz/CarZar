@@ -10,5 +10,8 @@ const AdMiniature = (props) => {
     </div>
   );
 };
+const Kus = () => {
+    return 'Kus';
+};
 
 export default AdMiniature;

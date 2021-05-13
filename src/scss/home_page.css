@@ -6,8 +6,8 @@
 }
 
 * a {
-  text-decoration: none;
-  color: inherit;
+  text-decoration: none !important;
+  color: inherit !important;
 }
 
 .header .links {
@@ -101,6 +101,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   list-style: none;
+  margin: 0 !important;
 }
 
 .header .menu-items ul li {
@@ -198,7 +199,7 @@
   text-transform: uppercase;
   font-weight: 800;
   font-style: normal;
-  font-size: 2rem;
+  font-size: 2rem !important;
   color: #b00503;
   margin: 0 auto 1rem auto;
 }

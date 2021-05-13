@@ -3,8 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     a {
-        text-decoration: none;
-        color: inherit;
+        text-decoration: none !important;
+        color: inherit !important;
     }
 }
 
@@ -15,3 +15,4 @@ $red-color: #b00503;
 @import 'search';
 @import 'new_arrivals';
 @import 'footer';
+@import 'carousel';
