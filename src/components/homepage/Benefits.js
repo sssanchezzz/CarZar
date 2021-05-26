@@ -1,6 +1,5 @@
 import React from 'react';
 import Circle from './Circle';
-import bugatti from '../img/bugatti_bg_fhd.jpeg';
 
 const Benefits = () => {
     return (

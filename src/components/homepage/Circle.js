@@ -1,5 +1,5 @@
 import React from 'react';
-import circle_bg from '../img/Circle_bg.svg';
+import circle_bg from '../../img/Circle_bg.svg';
 const Circle = (props) => {
     const { title, text } = props;
     return (

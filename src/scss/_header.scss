@@ -1,4 +1,10 @@
 .header {
+    .sell-link {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin: 0.2rem 3rem;
+    }
     .links {
         display: flex;
         align-items: center;
@@ -66,9 +72,9 @@
         }
         .login {
             display: flex;
+            align-items: center;
             button {
-                margin: 0.2rem 3rem;
-                padding: 0 3rem;
+                padding: 1rem 3rem;
             }
         }
     }
@@ -84,9 +90,15 @@
     font-size: 1.1rem;
     cursor: pointer;
 }
+.red-btn-active {
+    background: white !important;
+    color: $red-color !important;
+    // box-shadow: 0px 0px 0px 1px $red-color inset;
+}
 .active {
     position: relative;
 }
+
 .active::before {
     transform: translateY(1.5rem) translateX(-50%);
     border-radius: 100%;

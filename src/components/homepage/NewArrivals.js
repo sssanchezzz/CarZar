@@ -1,12 +1,12 @@
 import React from 'react';
-import Slider from 'react-slick';
 
-import AdMiniature from './AdMiniature';
+import AdMiniature from '../AdMiniature';
+import { Link } from 'react-router-dom';
 
-import black_car from '../img/black_car.png';
-import red_car from '../img/red_car.png';
-import yellow_car from '../img/yellow_car.png';
-import white_car from '../img/white_car.png';
+import black_car from '../../img/black_car.png';
+import red_car from '../../img/red_car.png';
+import yellow_car from '../../img/yellow_car.png';
+import white_car from '../../img/white_car.png';
 
 const NewArrivals = () => {
     const settings = {
@@ -30,11 +30,13 @@ const NewArrivals = () => {
                     picture={black_car}
                     price='41000'
                 />
+                {/* <Link to='/view-ad-page'> */}
                 <AdMiniature
                     name='Shu Todoroki'
                     picture={white_car}
                     price='25000'
                 />
+                {/* </Link> */}
                 <AdMiniature name='Luigi' picture={yellow_car} price='100000' />
             </div>
 

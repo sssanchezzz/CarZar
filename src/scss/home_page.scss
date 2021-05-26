@@ -11,8 +11,7 @@
 $red-color: #b00503;
 
 @import 'header';
-@import 'benefits';
-@import 'search';
-@import 'new_arrivals';
+@import 'homepage/benefits';
+@import 'homepage/search';
+@import 'homepage/new_arrivals';
 @import 'footer';
-@import 'carousel';

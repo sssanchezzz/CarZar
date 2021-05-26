@@ -11,6 +11,7 @@ const RegisterPage = () => {
     return (
         <>
             <Header />
+            <hr />
             <div className='register-page-wrapper'>
                 <div className='register-page'>
                     <PhotoChange />

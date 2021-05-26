@@ -1,5 +1,5 @@
 import React from 'react';
-import SelectItem from './SelectItem';
+import SelectItem from '../SelectItem';
 
 const Search = () => {
     let arr = [0, 1, 2, 3, 4];

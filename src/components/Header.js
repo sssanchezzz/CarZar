@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import { useLocation } from 'react-router-dom';
 import header_svg from '../img/header_black_svg.svg';
 import insta from '../img/insta.svg';
 import facebook from '../img/facebook.svg';
 import telegram from '../img/telegram.svg';
 import google from '../img/google.svg';
 const Header = () => {
+    const pathname = useLocation().pathname.split('/')[1];
     return (
         <div className='header'>
             <div className='links'>
@@ -54,33 +55,31 @@ const Header = () => {
             </div>
             <div className='menu-items'>
                 <ul className='menu'>
-                    <li className='active'>
+                    <li className={pathname === '' ? 'active' : ''}>
                         <Link to='/'>Home</Link>
                     </li>
-                    <li>
-                        <Link to='/'>New Cars</Link>
-                    </li>
-                    <li>
-                        <Link to='/'>Used Cars</Link>
-                    </li>
-                    <li>
-                        <Link to='/'>Electro Cars</Link>
+                    <li className={pathname === 'all-ads' ? 'active' : ''}>
+                        <Link to='/all-ads'>All Ads</Link>
                     </li>
                 </ul>
                 <div className='login'>
-                    <button className='sell-car-btn red-btn'>
-                        <Link to='/new_ad'> Sell a car</Link>
-                    </button>
+                    <Link className='sell-link' to='/new-ad'>
+                        <button
+                            className={
+                                pathname === 'new-ad'
+                                    ? 'sell-car-btn red-btn red-btn-active active'
+                                    : 'sell-car-btn red-btn'
+                            }
+                        >
+                            Sell a car
+                        </button>
+                    </Link>
                     <ul>
-                        <li>
-<<<<<<< HEAD
-                            <Link to='/'> Register</Link>
-=======
-                            <a href='/register'> Register</a>
->>>>>>> ad516040acbc5d9ffbf5e077fcc0b78e8cdb2060
+                        <li className={pathname === 'register' ? 'active' : ''}>
+                            <Link to='/register'> Register</Link>
                         </li>
-                        <li>
-                            <Link to='/'>Login</Link>
+                        <li className={pathname === 'login' ? 'active' : ''}>
+                            <Link to='/login'>Login</Link>
                         </li>
                     </ul>
                 </div>
