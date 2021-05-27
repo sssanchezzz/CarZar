@@ -1,11 +1,14 @@
 import React from 'react';
 
 const SelectItem = (props) => {
-    const { title, selectItems } = props;
+    const { title, selectItems, setItem } = props;
     return (
         <div className='select-item'>
             <h4>{title}</h4>
-            <select className='search-select'>
+            <select
+                className='search-select'
+                onChange={(e) => setItem(e.target.value)}
+            >
                 <option>Choose {title}</option>
                 {createSelectItems(selectItems)}
             </select>

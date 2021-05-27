@@ -5,17 +5,9 @@
     align-items: center;
     width: 25%;
     height: 14rem;
-    .photo-wrapper {
-        width: 10rem;
-        height: 10rem;
-        background-color: #c4c4c4;
-        border-radius: 50%;
-    }
-    .add-photo-button-wrapper {
-        .add-photo-button {
-            text-decoration: underline;
-            font-family: 'Lato', sans-serif;
-            font-size: 1rem;
+    .form-file {
+        img {
+            border-radius: 50% !important;
         }
     }
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import AdMiniature from '../components/AdMiniature';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
@@ -13,6 +13,18 @@ import SelectItem from '../components/SelectItem';
 
 const AllAdsPage = () => {
     let arr = [0, 1, 2, 3, 4];
+
+    const [Ads, setAds] = useState([]);
+    useEffect(() => {
+        setAds([
+            { id: 1, name: 'Car1', picture: red_car, price: '30000' },
+            { id: 2, name: 'Car2', picture: black_car, price: '25000' },
+            { id: 3, name: 'Car3', picture: yellow_car, price: '40000' },
+            { id: 4, name: 'Car4', picture: white_car, price: '12000' },
+            { id: 5, name: 'Car5', picture: red_car, price: '24000' },
+            { id: 6, name: 'Car6', picture: yellow_car, price: '10000' },
+        ]);
+    }, []);
 
     return (
         <>
@@ -38,61 +50,16 @@ const AllAdsPage = () => {
                 <div className='all-ads-container'>
                     <h2>All ads</h2>
                     <div className='ad-miniatures-wrapper'>
-                        <AdMiniature
-                            name='Lightning MCQUEEN'
-                            picture={red_car}
-                            price='30000'
-                        />
-                        <AdMiniature
-                            name='Jackson Storm'
-                            picture={black_car}
-                            price='41000'
-                        />
-                        <AdMiniature
-                            name='Shu Todoroki'
-                            picture={white_car}
-                            price='25000'
-                        />
-                        <AdMiniature
-                            name='Yelloweee'
-                            picture={yellow_car}
-                            price='200000'
-                        />
-                        <AdMiniature
-                            name='Yelloweee'
-                            picture={yellow_car}
-                            price='200000'
-                        />
-                        <AdMiniature
-                            name='Yelloweee'
-                            picture={yellow_car}
-                            price='200000'
-                        />
-                        <AdMiniature
-                            name='Yelloweee'
-                            picture={yellow_car}
-                            price='200000'
-                        />
-                        <AdMiniature
-                            name='Yelloweee'
-                            picture={yellow_car}
-                            price='200000'
-                        />
-                        <AdMiniature
-                            name='Yelloweee'
-                            picture={yellow_car}
-                            price='200000'
-                        />
-                        <AdMiniature
-                            name='Yelloweee'
-                            picture={yellow_car}
-                            price='200000'
-                        />
-                        <AdMiniature
-                            name='Yelloweee'
-                            picture={yellow_car}
-                            price='200000'
-                        />
+                        {Ads.map((x) => {
+                            return (
+                                <AdMiniature
+                                    id={x.id}
+                                    name={x.name}
+                                    picture={x.picture}
+                                    price={x.price}
+                                />
+                            );
+                        })}
                     </div>
                 </div>
             </div>

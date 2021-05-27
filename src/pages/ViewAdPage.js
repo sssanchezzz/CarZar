@@ -4,8 +4,10 @@ import AdCarInfo from '../components/viewadpage/AdCarInfo';
 import '../scss/view_ad_page.css';
 import lamba from '../img/yellow_car.png';
 import Footer from '../components/Footer';
+import { useParams } from 'react-router-dom';
 const ViewAdPage = (props) => {
     const { src, name } = props;
+    const { id } = useParams();
     return (
         <>
             <Header />
