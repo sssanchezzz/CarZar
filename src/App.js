@@ -30,13 +30,10 @@ function App() {
                 <Route path='/all-ads' exact>
                     <AllAdsPage />
                 </Route>
-                <Route path='/view-ad' exact>
-                    <ViewAdPage />
-                </Route>
                 <Route path='/my-profile' exact>
                     <ProfilePage />
                 </Route>
-                <Route path='/view-ad-page' export default>
+                <Route path='/view-ad-page/:id' exact>
                     <ViewAdPage />
                 </Route>
             </Switch>
