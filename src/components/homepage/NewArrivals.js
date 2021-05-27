@@ -9,13 +9,6 @@ import yellow_car from '../../img/yellow_car.png';
 import white_car from '../../img/white_car.png';
 
 const NewArrivals = () => {
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-    };
     return (
         <div className='new-arrivals'>
             <h2>New Arrivals</h2>
@@ -30,17 +23,17 @@ const NewArrivals = () => {
                     picture={black_car}
                     price='41000'
                 />
-                {/* <Link to='/view-ad-page'> */}
                 <AdMiniature
                     name='Shu Todoroki'
                     picture={white_car}
                     price='25000'
                 />
-                {/* </Link> */}
                 <AdMiniature name='Luigi' picture={yellow_car} price='100000' />
             </div>
 
-            <button className='red-btn show-more-btn'>Show More</button>
+            <Link to='/all-ads' className='all-ads-link'>
+                <button className='red-btn show-more-btn'>Show More</button>
+            </Link>
         </div>
     );
 };

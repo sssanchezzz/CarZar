@@ -350,12 +350,14 @@
   font-size: 1.2rem;
 }
 
-.new-arrivals .show-more-btn {
+.new-arrivals .all-ads-link {
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+
+.new-arrivals .show-more-btn {
   padding: 1rem 0;
   width: 15rem;
-  align-self: flex-end;
 }
 
 .gallery {
